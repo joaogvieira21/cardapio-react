@@ -31,9 +31,6 @@ const Header = () => {
           <NavBar items={["Saladas", "Frutos do Mar", "Carnes e Aves", "Massas e Molhos", "Petiscos", "Sobremesas", "Lanches", "Bebidas"]}/>
         </nav>
         <div className="half-header">
-        </div>
-        <div className="end-header">
-        </div>
         <div className="logo-description">
           <div class="container-logo">
               <img src={logo}></img>
@@ -42,6 +39,10 @@ const Header = () => {
           <span>Aqui é <strong>FIT</strong> de verdade!</span>
           <button className="btn-see-more" onClick={seeMoreHandler}>Ver mais</button>
         </div>
+        </div>
+        <div className="end-header">
+        </div>
+     
         {clicked==false && (
         <div className="adress-social ">
           <div className="social scale-up-hor-left">

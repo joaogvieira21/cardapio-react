@@ -2,30 +2,50 @@
     font-family: "Raleway", sans-serif ;
     list-style: none;
 }
+html {
+    font-size: 62.5%;
+}
 
 .header {
     position:relative;
-    height: 480px;
+    max-height: 45%;
     width: 100%;
 }
 
 nav {
     border-bottom: 2px solid rgb(211, 208, 208);
-    height: 60px;
+    max-height: 10%;
 }
+.menu-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+li {
+  cursor:pointer;
+  width: 20%;
+}
+
+li:hover {
+  color:red;
+  background-color: rgb(211, 208, 208);
+  transition: 0.5s;
+}
+
 .half-header {
     background-color: rgb(23, 177, 23);
-    height: 180px;
 }
 .end-header {
-    height: 240px;
-
+    min-height: 24vh;
 }
 .logo-description {
-    position:absolute;
-    bottom: 30px;
-    right: 0;
-    left:0;
+    position:relative;
+    top: 170px;
     margin:auto;
     display: flex;
     gap:10px;
@@ -33,7 +53,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 550px;   
+    max-width: 30vh;   
 }
 
 
@@ -49,30 +69,12 @@ nav {
     
 }
 .container-logo img {
- 
   border-radius: 120px;
   width: 180px;
   height: 180px;
 }
 
-.menu-header {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 60px;
-}
-li {
-    cursor:pointer;
-    width: 20%;
-}
-li:hover {
-    color:red;
-    background-color: rgb(211, 208, 208);
-    transition: 0.5s;
-}
+
 
 .adress-social {
     text-align: center;
@@ -82,7 +84,6 @@ li:hover {
 .btn-see-more {
     border: none;
     background-color: white;
-    font-size: 20px;
     color: rgb(23, 177, 23)
 }
 
@@ -189,7 +190,7 @@ li:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 23px;
+  font-size: 2em;
   line-height: 50px;
   border-bottom: 1px solid  rgb(211, 208, 208);
   
@@ -222,7 +223,7 @@ h2 {
   width: 100%;
   border-radius: 10px;
   border: 1px solid rgb(211, 208, 208);
-  font-size: 20px;
+  font-size: 2em;
   text-align: left;
   font-weight: bold;
   cursor: pointer;
@@ -233,21 +234,22 @@ h2 {
 .food-container {
  display:grid;
  grid-template-columns: 33% 33% 33%;
- grid-row-gap: 10px
+ grid-row-gap: 10px;
 }
 .food-description span {
   max-width: 210px;
 }
 .food {
-  width: 400px;
-  height: 12vh;
+  min-width: 90%;
+  max-height: 100%;
   border-radius: 10px;
   border: 1px solid rgb(211, 208, 208);
   display: flex;
   align-items: center;
   gap:10px;
-
+  font-size: 1.5em;
 }
+
 .food-description {
   display: flex;
   flex-direction: column;
